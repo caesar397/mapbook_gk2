@@ -11,6 +11,7 @@ def main():
         print("4 - Aktualizuj znajomego")
         print("5 - Dodaj post")
         print("6 - Wyświetl mapę znajomych")
+        print("======================")
         choice = int(input("Wybierz opcję w menu: "))
         if choice == 0:
             break
