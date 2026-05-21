@@ -2,7 +2,7 @@ users = [{
     "name": "Gabriela",
     "location": "Lublin",
     "posts": ["Sprzedam Opla", "Jak wyciąć katalizator?", "Co oznacza czerwona kotrolka?"]
-    },
+},
     {
         "name": "Daniel",
         "location": "Legionowo",
