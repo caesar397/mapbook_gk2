@@ -1,6 +1,8 @@
 name: build and push
 on:
   push:
+    - env-test
+    - env-qa
 
 
 permissions:
@@ -16,11 +18,11 @@ jobs:
     environment: ${{ github.ref_name }}
 
     steps:
-      - uses: actions/checkout@v3
+      - users: actions/checkout@v3
 
       - name: building and setting local environment on server
 
-        run:
-          docker-compose -f ./docker-compose/docker-compose.yml -p mapbook_gk2 up --build -d
+    run:
+      docker-compose -f ./docker-compose/docker-compose.yml -p mapbook_gk2 up --build -d
 
 
